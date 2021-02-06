@@ -1,98 +1,86 @@
 const data = {
     albums: [
         {
-            artist: 'Paris May',
-            album: 'Sweet Dreams',
-            thumb: undefined
+            title: 'Paris May',
+            subtitle: 'Sweet Dreams',
         },
         {
-            artist: 'Paris May',
-            album: 'Sweet Dreams',
-            thumb: undefined
+            title: 'Paris May',
+            subtitle: 'Sweet Dreams',
         },
         {
-            artist: 'Paris May',
-            album: 'Sweet Dreams',
-            thumb: undefined
+            title: 'Paris May',
+            subtitle: 'Sweet Dreams',
         },
         {
-            artist: 'Paris May',
-            album: 'Sweet Dreams',
-            thumb: undefined
+            title: 'Paris May',
+            subtitle: 'Sweet Dreams',
         },
         {
-            artist: 'Paris May',
-            album: 'Sweet Dreams',
-            thumb: undefined
+            title: 'Paris May',
+            subtitle: 'Sweet Dreams',
         },
         {
-            artist: 'Paris May',
-            album: 'Sweet Dreams',
-            thumb: undefined
+            title: 'Paris May',
+            subtitle: 'Sweet Dreams',
         },
     ],
     artists: [
         {
-            artist: 'Paris May',
-            album: 'Sweet Dreams',
-            thumb: undefined
+            title: 'Paris May',
+            subtitle: 'Sweet Dreams',
         },
         {
-            artist: 'Paris May',
-            album: 'Sweet Dreams',
-            thumb: undefined
+            title: 'Paris May',
+            subtitle: 'Sweet Dreams',
         },
         {
-            artist: 'Paris May',
-            album: 'Sweet Dreams',
-            thumb: undefined
+            title: 'Paris May',
+            subtitle: 'Sweet Dreams',
         },
         {
-            artist: 'Paris May',
-            album: 'Sweet Dreams',
-            thumb: undefined
+            title: 'Paris May',
+            subtitle: 'Sweet Dreams',
         },
         {
-            artist: 'Paris May',
-            album: 'Sweet Dreams',
-            thumb: undefined
+            title: 'Paris May',
+            subtitle: 'Sweet Dreams',
         },
         {
-            artist: 'Paris May',
-            album: 'Sweet Dreams',
-            thumb: undefined
+            title: 'Paris May',
+            subtitle: 'Sweet Dreams',
         },
     ],
     songs: [
         {
-            artist: 'Paris May',
-            song: 'Good Morning',
-            album: 'Sweet Dreams'
+            subtitle: 'Paris May',
+            title: 'Good Morning',
+            description: 'Sweet Dreams'
         },
         {
-            artist: 'Paris May',
-            song: 'Good Morning',
-            album: 'Sweet Dreams'
+            subtitle: 'Paris May',
+            title: 'Good Morning',
+            description: 'Sweet Dreams'
         },
         {
-            artist: 'Paris May',
-            song: 'Good Morning',
-            album: 'Sweet Dreams'
+            subtitle: 'Paris May',
+            title: 'Good Morning',
+            description: 'Sweet Dreams'
         },
         {
-            artist: 'Paris May',
-            song: 'Good Morning',
-            album: 'Sweet Dreams'
+            subtitle: 'Paris May',
+            title: 'Good Morning',
+            description: 'Sweet Dreams'
         },
         {
-            artist: 'Paris May',
-            song: 'Good Morning',
-            album: 'Sweet Dreams'
+            subtitle: 'Paris May',
+            title: 'Good Morning',
+            description: 'Sweet Dreams'
         },
         {
-            artist: 'Paris May',
-            song: 'Good Morning',
-            album: 'Sweet Dreams'
+            subtitle: 'Paris May',
+            title: 'Good Morning',
+            description: 'Sweet Dreams'
         },
     ],
 }

@@ -1,0 +1,25 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2em;
+
+    font-size: 2em;
+    text-transform: uppercase;
+
+    &__element {
+      color: #000000;
+      opacity: .3;
+      transition: opacity .2s ease;
+
+      &_active {
+        opacity: 1;
+      }
+    }
+  }
+}
