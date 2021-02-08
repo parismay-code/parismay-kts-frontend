@@ -24,4 +24,5 @@ yarn-error.log*
 
 .eslintcache
 
-.idea
+.idea/workspace.xml
+.idea/
