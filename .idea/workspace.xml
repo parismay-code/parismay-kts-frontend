@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47f798b4-d031-4237-92dc-8edccbad4331" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/components/Header/Header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/components/HomeCard/HomeCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/components/HomeCard/HomeCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/components/HomeNavigation/HomeNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/components/HomeNavigation/HomeNavigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/components/HomeNavigation/HomeNavigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/components/HomeNavigation/HomeNavigation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/configs/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/configs/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/pages/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/pages/HomePage/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/styles/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/styles/vars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +93,7 @@
       <workItem from="1612605515116" duration="41000" />
       <workItem from="1612605557957" duration="22000" />
       <workItem from="1612605677380" duration="107000" />
-      <workItem from="1612772492510" duration="3450000" />
+      <workItem from="1612772492510" duration="3992000" />
     </task>
     <servers />
   </component>
