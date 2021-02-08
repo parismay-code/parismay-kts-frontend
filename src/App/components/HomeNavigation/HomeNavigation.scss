@@ -1,3 +1,5 @@
+@import '../../styles/vars';
+
 .navigation {
   display: flex;
   align-items: center;
@@ -13,7 +15,7 @@
     text-transform: uppercase;
 
     &__element {
-      color: #000000;
+      color: $color-black;
       opacity: .3;
       transition: opacity .2s ease;
 
