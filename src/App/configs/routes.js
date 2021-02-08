@@ -3,7 +3,8 @@ const routes = {
         index: '/home',
         albums: '/home/albums/',
         artists: '/home/artists/',
-        songs: '/home/songs/'
+        songs: '/home/songs/',
+        create: (id) => `/home/${id}`
     } ,
     artists: '/artists/',
 
