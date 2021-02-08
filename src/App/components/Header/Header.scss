@@ -1,0 +1,67 @@
+@import '../../styles/vars';
+
+.header {
+  position: relative;
+
+  height: 6vw;
+
+  background-color: $color-light-black;
+  box-shadow: 0 .3em .3em rgba(0, 0, 0, 0.25);
+  color: $color-white;
+
+  &-container {
+    width: 56.5%;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+      background-color: $color-yellow;
+      width: 8%;
+      height: 75%;
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 1.25em;
+
+      cursor: pointer;
+    }
+
+    &-navigation {
+      position: relative;
+      width: 44.8%;
+
+      font-size: 1.7em;
+      text-transform: uppercase;
+
+      &-list {
+        display: flex;
+        align-items: center;
+        column-gap: 3.6em;
+
+        &__element {
+          color: $color-white;
+        }
+      }
+
+      &__slider {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translate(-10%, 300%);
+
+        height: .35em;
+        width: 4.2em;
+        background-color: $color-yellow;
+
+        transition: left .5s ease, width .5s ease;
+      }
+    }
+  }
+}
