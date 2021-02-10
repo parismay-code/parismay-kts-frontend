@@ -1,32 +1,31 @@
+import * as React from 'react';
 import {
+    BrowserRouter,
     Switch,
     Route,
     Redirect
 } from "react-router-dom";
 
-import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
+import Header from "./components/Header";
 
 import routes from "./configs/routes";
 
-import './App.scss';
-
 const App = () => {
+
     return (
-        <div className="app">
-            <header className='app__header'>
-                <Header routes={routes}/>
-            </header>
-            <main className='app__main'>
+        <BrowserRouter>
+            <div className='app'>
+                <Header/>
+
                 <Switch>
-                    <Route path={routes.home.index}>
-                        <HomePage routes={routes}/>
+                    <Route path={routes[0].index} exact>
+                        <HomePage/>
                     </Route>
-                    <Redirect to={routes.home.index}/>
+                    <Redirect to={routes[0].index}/>
                 </Switch>
-            </main>
-            <span className='app__copyright'>© 2021 | Kuznetsov Kirill Andreevich</span>
-        </div>
+            </div>
+        </BrowserRouter>
     );
 }
 
