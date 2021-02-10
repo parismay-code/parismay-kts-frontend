@@ -38,6 +38,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -45,7 +46,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/App/assets/images" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -59,6 +60,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\projects\kts-react-app\parismay-kts-frontend\src\App\assets\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Desktop\projects\kts-react-app\parismay-kts-frontend\src" />
       <recent name="C:\Users\Admin\Desktop\projects\kts-react-app\parismay-kts-frontend\src\App" />
@@ -93,7 +97,11 @@
       <workItem from="1612605515116" duration="41000" />
       <workItem from="1612605557957" duration="22000" />
       <workItem from="1612605677380" duration="107000" />
-      <workItem from="1612772492510" duration="3992000" />
+      <workItem from="1612772492510" duration="5257000" />
+      <workItem from="1612876373006" duration="2104000" />
+      <workItem from="1612879770117" duration="1713000" />
+      <workItem from="1612896640317" duration="23158000" />
+      <workItem from="1612964698344" duration="1750000" />
     </task>
     <servers />
   </component>
@@ -111,5 +119,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
