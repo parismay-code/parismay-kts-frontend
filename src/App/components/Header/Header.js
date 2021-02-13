@@ -1,24 +1,33 @@
-import './Header.scss'
-import {Link} from "react-router-dom";
+import * as React from 'react';
+import {Link} from 'react-router-dom';
+import cn from 'classnames';
+import {useLocation} from 'react-router-dom';
 
-const Header = (props) => {
+import HeaderPlayer from "../HeaderPlayer";
+
+import routes from "../../configs/routes";
+
+import logo from '../../assets/images/logo.svg';
+
+import styles from './Header.module.scss';
+
+const Header = () => {
+    const location = useLocation();
+
     return (
-        <div className='header-container'>
-                <div className='header-container__logo'>NLRG</div>
-                <nav className='header-container-navigation'>
-                    <ul className='header-container-navigation-list'>
-                        <Link to={props.routes.home.index} className='header-container-navigation-list__element'>
-                            Home
-                        </Link>
-                        <Link to={props.routes.artists} className='header-container-navigation-list__element'>
-                            Artists
-                        </Link>
-                        <Link to={props.routes.contacts} className='header-container-navigation-list__element'>
-                            Contacts
-                        </Link>
-                    </ul>
-                    <div className='header-container-navigation__slider'/>
-                </nav>
+        <div className={styles.header}>
+            <img src={logo} alt='NLRG' className={styles.header__logo}/>
+            {routes.map((el, key) => {
+                return <Link
+                    key={key}
+                    to={el.index}
+                    className={cn(styles.header__element,
+                        location.pathname === el.index && styles.header__elementActive)}
+                >
+                    {el.name}
+                </Link>
+            })}
+            <HeaderPlayer/>
         </div>
     )
 }
