@@ -1,21 +1,13 @@
-const routes = [
-    {
-        index: '/home/',
-        mask: '/home/:id/',
-        artists: '/home/artists/',
-        tags: '/home/tags/',
-        create: (id) => `/home/${id}`,
-        name: 'Home'
-    } ,
-    {
-        index: '/artists/',
-        name: 'Artists',
+const routes = {
+    home: {
+        index: '/home/'
     },
-
-    {
-        index: '/tags/',
-        name: 'Tags',
+    artists: {
+        index: '/artists/'
+    },
+    tags: {
+        index: '/tags/'
     }
-];
+};
 
 export default routes;

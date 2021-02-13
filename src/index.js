@@ -6,15 +6,17 @@ import App from './App/App';
 
 import reportWebVitals from './reportWebVitals';
 
+import './App/utils/initMobX';
+
 import './index.scss';
 
 ReactDOM.render(
-  <React.StrictMode>
-      <Router>
-          <App />
-      </Router>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <Router>
+            <App />
+        </Router>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 reportWebVitals();

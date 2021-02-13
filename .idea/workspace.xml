@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="47f798b4-d031-4237-92dc-8edccbad4331" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-overrides.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsconfig.paths.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App/components/HomeArtistCard/HomeArtistCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App/components/HomeArtistCard/HomeArtistCard.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App/components/HomeArtistCard/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App/components/HomeArtists/HomeArtists.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App/configs/apiUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App/store/MainStore/MainStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App/store/MainStore/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App/store/MainStore/requestLastFmData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App/store/normalizedData/MB/MBArtistImageApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App/utils/hooks/useAsync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App/utils/hooks/useLocal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App/utils/initMobX.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/components/Header/Header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/components/HeaderPlayer/HeaderPlayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/components/HeaderPlayer/HeaderPlayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/components/HeaderPlayer/HeaderPlayer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/components/HeaderPlayer/HeaderPlayer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/components/HomeArtists/HomeArtists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/components/HomeArtists/HomeArtists.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/configs/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/configs/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/pages/HomePage/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/pages/HomePage/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/pages/HomePage/Home.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/pages/HomePage/Home.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/pages/HomePage/HomeHOC.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/store/context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/store/context.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/store/getArtistImage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/store/getArtistsData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/store/getSongsData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/store/getTagsData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/styles/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/styles/mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/styles/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/styles/vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/utils/hooks/useForceUpdate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +71,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="1nx0EhhWgfgYMT1Fmg9RYI1gN40" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -46,7 +91,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/App/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -64,12 +109,16 @@
       <recent name="C:\Users\Admin\Desktop\projects\kts-react-app\parismay-kts-frontend\src\App\assets\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\projects\kts-react-app\parismay-kts-frontend" />
       <recent name="C:\Users\Admin\Desktop\projects\kts-react-app\parismay-kts-frontend\src" />
       <recent name="C:\Users\Admin\Desktop\projects\kts-react-app\parismay-kts-frontend\src\App" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="Node.js.MainStore.js">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="MainStore.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/App/store/MainStore/MainStore.js" working-dir="$PROJECT_DIR$/src/App/store/MainStore">
       <method v="2" />
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
@@ -82,6 +131,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.MainStore.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -101,7 +155,11 @@
       <workItem from="1612876373006" duration="2104000" />
       <workItem from="1612879770117" duration="1713000" />
       <workItem from="1612896640317" duration="23158000" />
-      <workItem from="1612964698344" duration="1750000" />
+      <workItem from="1612964698344" duration="2207000" />
+      <workItem from="1612992017268" duration="5170000" />
+      <workItem from="1613051873344" duration="13844000" />
+      <workItem from="1613090875909" duration="5252000" />
+      <workItem from="1613220161871" duration="15249000" />
     </task>
     <servers />
   </component>

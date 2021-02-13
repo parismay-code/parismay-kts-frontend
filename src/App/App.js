@@ -6,10 +6,10 @@ import {
     Redirect
 } from "react-router-dom";
 
-import HomePage from "./pages/HomePage";
-import Header from "./components/Header";
+import HomePage from "@pages/HomePage";
+import Header from "@components/Header";
 
-import routes from "./configs/routes";
+import routes from "@configs/routes";
 
 const App = () => {
 
@@ -19,10 +19,10 @@ const App = () => {
                 <Header/>
 
                 <Switch>
-                    <Route path={routes[0].index} exact>
+                    <Route path={routes.home.index} exact>
                         <HomePage/>
                     </Route>
-                    <Redirect to={routes[0].index}/>
+                    <Redirect to={routes.home.index}/>
                 </Switch>
             </div>
         </BrowserRouter>
