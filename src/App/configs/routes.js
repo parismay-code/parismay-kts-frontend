@@ -3,10 +3,9 @@ const routes = {
         index: '/home/'
     },
     artists: {
-        index: '/artists/'
-    },
-    tags: {
-        index: '/tags/'
+        index: '/artists/',
+        mask: '/artists/:name',
+        create: (name) => `/artists/${name}`
     }
 };
 

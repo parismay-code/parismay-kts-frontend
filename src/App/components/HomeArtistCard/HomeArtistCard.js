@@ -1,27 +1,30 @@
 import * as React from 'react';
-import {useAsync} from "@utils/hooks/useAsync";
+import {Link} from "react-router-dom";
+
+import routes from "@configs/routes";
+import {regExp} from "@utils/regExp";
 
 import styles from './HomeArtistCard.module.scss';
-import {observer} from "mobx-react-lite";
 
-const HomeArtistCard = ({ name, listeners, url, MBId, store }) => {
-    const [thumb, setThumb] = React.useState();
+const HomeArtistCard = ({name, listeners, MBId}) => {
     const [isLoading, setLoading] = React.useState(true);
 
-    useAsync(async () => {
-        if (MBId) await store.fetchArtistImage(MBId);
-        setThumb(store.artistImage);
-        setTimeout(() => setLoading(false), 400)
-    });
+    React.useEffect(() => {
+        const fade = setTimeout(() => setLoading(false), 400);
+
+        return () => clearTimeout(fade);
+    }, [])
+
+    const _listeners = React.useMemo(() => listeners.replace(regExp.number, ' '), [listeners]);
 
     return <div className={styles[isLoading ? 'home-artist_hidden' : 'home-artist']}>
-        <img className={styles['home-artist__image']} src={thumb} alt=''/>
+        <div className={styles['home-artist__image_blank']}>no image</div>
         <div className={styles['home-artist-info']}>
             <span className={styles['home-artist-info__name']}>{name}</span>
-            <span className={styles['home-artist-info__listeners']}><b>Listeners:</b> {listeners}</span>
-            <a href={url} target='_blank' rel='noreferrer' className={styles['home-artist-info__url']}>View profile</a>
+            <span className={styles['home-artist-info__listeners']}><b>Listeners:</b> {_listeners}</span>
+            <Link to={routes.artists.create(MBId)} className={styles['home-artist-info__url']}>View profile</Link>
         </div>
     </div>
 }
 
-export default observer(HomeArtistCard);
+export default React.memo(HomeArtistCard);

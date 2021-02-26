@@ -1,0 +1,26 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+
+.home-tags {
+  display: flex;
+  flex-direction: column;
+
+  transition: opacity .2s;
+
+  &_hidden {
+    @extend .home-tags;
+    opacity: 0;
+  }
+
+  &__name {
+    margin-bottom: 15px;
+
+    font-size: $font-size-maximum;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  &-description {
+    font-size: $font-size-medium;
+  }
+}
