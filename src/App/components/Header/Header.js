@@ -20,20 +20,14 @@ const Header = () => {
             <Link
                 to={routes.home.index}
                 className={cn(styles['header__element'],
-                    location.pathname === routes.home.index && styles['header__element_active'])}
+                    location.pathname.includes(routes.home.index) && styles['header__element_active'])}
             >Home
             </Link>
             <Link
-                to={routes.artists.index}
+                to={routes.artists.create('search')}
                 className={cn(styles['header__element'],
-                    location.pathname === routes.artists.index && styles['header__element_active'])}
+                    location.pathname.includes(routes.artists.index) && styles['header__element_active'])}
             >Artists
-            </Link>
-            <Link
-                to={routes.tags.index}
-                className={cn(styles['header__element'],
-                    location.pathname === routes.tags.index && styles['header__element_active'])}
-            >Tags
             </Link>
             <HeaderPlayer/>
         </div>

@@ -34,6 +34,32 @@ export const requestLastFmData = async (method, limit) => {
     }
 }
 
+export const requestLastFmArtistInfo = async (method, MBId) => {
+    try {
+        const response = await axios.get(
+            apiUrls.lastFm.lastFmApi,
+            {
+                params: {
+                    method: method,
+                    mbid: MBId,
+                    api_key: API_KEY,
+                    format: 'json'
+                }
+            }
+        );
+        return {
+            isError: false,
+            data: response.data
+        };
+    } catch (e) {
+        console.log(e);
+        return {
+            isError: true,
+            data: null
+        }
+    }
+}
+
 /**
  * @param MBId - artist ID on https://musicbrainz.org/
  * @returns url of artist image

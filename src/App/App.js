@@ -5,13 +5,19 @@ import {
     Route,
     Redirect
 } from "react-router-dom";
+import {observer} from "mobx-react-lite";
+import {useLocalStore} from "@utils/hooks/useLocal";
 
-import HomePage from "@pages/HomePage";
 import Header from "@components/Header";
+import HomePage from "@pages/HomePage";
+import ArtistsPage from "@pages/ArtistsPage";
+
+import MainStore from "@store/MainStore";
 
 import routes from "@configs/routes";
 
 const App = () => {
+    const store = useLocalStore(() => new MainStore());
 
     return (
         <BrowserRouter>
@@ -20,7 +26,10 @@ const App = () => {
 
                 <Switch>
                     <Route path={routes.home.index} exact>
-                        <HomePage/>
+                        <HomePage store={store}/>
+                    </Route>
+                    <Route path={routes.artists.mask} exact>
+                        <ArtistsPage store={store}/>
                     </Route>
                     <Redirect to={routes.home.index}/>
                 </Switch>
@@ -29,4 +38,4 @@ const App = () => {
     );
 }
 
-export default App;
+export default observer(App);

@@ -1,0 +1,22 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+
+.content {
+  &__header {
+    @include chartHeaderBg();
+    width: 1000px;
+    padding: 8px;
+    margin-bottom: 15px;
+
+    font-size: $content-header-font-size;
+    text-transform: uppercase;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    row-gap: 50px;
+  }
+}

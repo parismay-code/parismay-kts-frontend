@@ -6,7 +6,7 @@ import App from './App/App';
 
 import reportWebVitals from './reportWebVitals';
 
-import './App/utils/initMobX';
+import '@utils/initMobX';
 
 import './index.scss';
 
