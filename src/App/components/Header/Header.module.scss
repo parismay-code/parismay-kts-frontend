@@ -19,7 +19,7 @@
     cursor: pointer;
 
     &:hover::before,
-    &Active::before {
+    &_active::before {
       content: '';
       position: absolute;
       left: 0;

@@ -1,8 +1,15 @@
-@mixin chartHeader() {
-  background: linear-gradient(to right, rgba(255, 255, 255, .1), rgba(0, 0, 0, .1));
+@mixin chartHeaderBg() {
+  background: linear-gradient(to right, #00000030, #ffffff05, #00000000);
 }
 
 @mixin square($size) {
   width: $size;
   height: $size;
+}
+
+@mixin absoluteCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

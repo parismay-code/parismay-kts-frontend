@@ -1,46 +1,38 @@
 import * as React from 'react';
+import {observer} from "mobx-react-lite";
+import {useLocalStore} from "../../utils/hooks/useLocal";
+import {useAsync} from "../../utils/hooks/useAsync";
 
-import HomeHOC from "./HomeHOC";
-import HomeArtists from "../../components/HomeArtists";
-import HomeSongs from "../../components/HomeSongs";
-import HomeTags from "../../components/HomeTags";
+import MainStore from "@store/MainStore";
+
+import HomeArtists from "@components/HomeArtists";
+import HomeSongs from "@components/HomeSongs";
+import HomeTags from "@components/HomeTags";
 
 import styles from './Home.module.scss';
 
+const Home = () => {
+    const [isLoading, setLoading] = React.useState(true);
 
-/*
-artists = {
-    name: string,
-    playcount: string,
-    listeners: string,
-    mbid: string,
-}
+    const store = useLocalStore(() => new MainStore());
 
-songs = {
-    name: string,
-    playcount: string,
-    listeners: string
-}
+    const artistsData = React.useMemo(() => store.data, [store.data]);
 
-tags = {
-    name: string,
-    reach: string,
-    taggings: string
-}
- */
+    useAsync(async () => {
+        await store.fetch('chart.gettopartists', 3);
+        setLoading(false);
+    });
 
-const Home = ({isLoading, artistsData, songsData, tagsData}) => {
     return <>
-        {
-            isLoading ? <div className={styles.home__loading}><div/><div/></div> :
-                <div className={styles.home}>
-                    <HomeArtists data={artistsData}/>
-                    <HomeSongs data={songsData}/>
-                    <HomeTags data={tagsData}/>
-                </div>
-        }
+        {isLoading && <div className={styles['home-loading']}>
+            <div className={styles['home-loading__ring']}/>
+        </div>}
+        {!isLoading && <div className={styles['home-content']}>
+            <HomeArtists store={store} data={artistsData}/>
+            <HomeSongs/>
+            <HomeTags/>
+        </div>}
     </>
-
 }
 
-export default HomeHOC(Home);
+export default observer(Home);
